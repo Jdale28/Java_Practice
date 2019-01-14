@@ -16,9 +16,14 @@ public class hello {
 //		System.out.println(num1);
 //		System.out.println(c2);
 		
-		byte b=10;
-		b=(byte)(b*b);
-		System.out.println(b);
+//		byte b=10;
+//		b=(byte)(b*b);
+//		System.out.println(b);
+		
+		int num=5;
+		int ans= ++num + num++ + num++;
+		System.out.println(num);
+		System.out.println(ans);
 		
 	}
 }
