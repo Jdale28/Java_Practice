@@ -1,6 +1,10 @@
+// Importing utils library to access methods -- in this case Scanner which detects user input
+
 import java.util.Scanner;
 import java.util.*;
 
+
+// A class defines the attributes (fields) and capabilities (methods) of a real world object
 public class Animal {
 
 	public static final double FAVNUMBER = 1.6180;
