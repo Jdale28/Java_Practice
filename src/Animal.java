@@ -47,7 +47,7 @@ public class Animal {
 			
 		}
 		
-		this.setFavoriteColor();
+		this.setFavoriteChar();
 		this.setUniqueID();
 	}
 	
@@ -134,7 +134,7 @@ public class Animal {
 			System.out.println("Favorite character is a lowercase letter");
 		}
 		
-		if(((randomNumber > 97) && (randomNumber < 122)) || ((randomNumber > 64) && (randomNumber < 91)){
+		if(((randomNumber > 97) && (randomNumber < 122)) || ((randomNumber > 64) && (randomNumber < 91))){
 			System.out.println("Favorite character is a letter");
 		}
 		
