@@ -100,6 +100,10 @@ public class Animal {
 		
 		// Math.random to generate a random ID for the object
 		this.uniqueID = minNumber + (long) (Math.random() * ((maxNumber - minNumber) + 1));
+		String stringNumber = Long.toString(maxNumber);
+		
+		int numberString =Integer.parseInt(stringNumber);
+		System.out.println("Unique ID set to: " + this.uniqueID);
 		
 	}
 
@@ -109,6 +113,30 @@ public class Animal {
 
 	public void setFavoriteChar(char favoriteChar) {
 		this.favoriteChar = favoriteChar;
+	}
+	
+	public void setFavoriteChar() {
+		int randomNumber = (int) (Math.random() * 126) + 1;
+		
+		this.favoriteChar = (char) randomNumber;
+		
+		if(randomNumber == 32) {
+			System.out.println("Favorite character set to Space");
+		
+		} else if (randomNumber == 10) {
+			System.out.println("Favorite character set to Newline");
+		
+		} else {
+			System.out.println("Favorite character set to " + this.favoriteChar);
+		}
+		
+		if((randomNumber > 97) && (randomNumber < 122)){
+			System.out.println("Favorite character is a lowercase letter");
+		}
+		
+		if((randomNumber > 97) && (randomNumber < 122)){
+			System.out.println("Favorite character is a lowercase letter");
+		}
 	}
 
 	public double getSpeed() {
