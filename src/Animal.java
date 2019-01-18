@@ -212,8 +212,23 @@ public class Animal {
 				System.out.printf("%s is not a number\n", numberEntered);
 			}
 			
+			// assigns the user input to "number"
 			number = userInput.nextInt();
-		}
+		// 50 is our "secret number"
+		} while (number != 50);
+	}
+	
+	
+	public String makeSound() {
+		
+		return "Grrrr";
+		
+	}
+	
+	public static void speakAnimal(Animal randAnimal) {
+		
+		System.out.println("Animal says " + randAnimal.makeSound());
+		
 	}
 	
 	
