@@ -1,4 +1,5 @@
-
+// since cat extends Animal it gets all of Animals fields and methods
+// This is inheritance
 public class Cat extends Animal {
 
 	
@@ -6,6 +7,7 @@ public class Cat extends Animal {
 		
 	}
 	
+	// Overrides the Animal Method can by creating a custom sound for Cats
 	public String makeSound() {
 		return "Meow";
 	}
