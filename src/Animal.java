@@ -121,6 +121,8 @@ public class Animal {
 		return uniqueID;
 	}
 
+	
+	// Method overloading allows you to accept different input with the same method name
 	public void setUniqueID(long uniqueID) {
 		this.uniqueID = uniqueID;
 		System.out.println("Unique ID set to: " + this.uniqueID);
@@ -162,6 +164,18 @@ public class Animal {
 			System.out.println("Favorite character set to " + this.favoriteChar);
 		}
 
+		/*
+		 * Logical Operators:
+		 * & : Returns true if boolean value on the right and left are both true (Always evaluates both boolean values)
+		 * && : Returns true if boolean value on the right and left are both true (Stops evaluating after first false)
+		 * | : Returns true if either boolean value on the right or left are true (Always evaluates both boolean values)
+		 * || : Returns true if either boolean value on the right or left are true (Stops evaluating after first true)
+		 * ^ : Returns true if there is 1 true and 1 false boolean value on the right or left
+		 */
+		
+		
+		
+		
 		if ((randomNumber > 97) && (randomNumber < 122)) {
 			System.out.println("Favorite character is a lowercase letter");
 		}
@@ -260,7 +274,12 @@ public class Animal {
 		System.out.println("Animal says " + randAnimal.makeSound());
 
 	}
-
+	
+	
+	// Public allows other classes to use this method
+	// static means that only a class can call for this to execute
+	// void means it doesnt return a value when it finishes executing
+	// This method can accept strings that can be stored in the string array args when it's executed
 	public static void main(String[] args) {
 
 		Animal theAnimal = new Animal();
@@ -291,8 +310,13 @@ public class Animal {
 			System.out.println("|");
 		}
 		
+		// Copy an array (stringToCopy, indexes to copy)
 		String[] cloneOfArray = Arrays.copyOf(stringArray, 3);
+		
+		// Print the whole array
 		System.out.println(Arrays.toString(cloneOfArray));
+		
+		// Return the index or a negative number
 		System.out.println(Arrays.binarySearch(cloneOfArray, "Random"));
 
 	}
