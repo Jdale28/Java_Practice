@@ -36,10 +36,18 @@ public class Animal {
 	// Floats are 32-bit IEEE 754 floating points with decimal values
 	private float height;
 
+	
+	// Static variables have the same value for every objects
+	// Any variable or function that doesn't make sense for an object to have should be made static
+	// Protected means that this value can only be accessed by other code in the same package or subclassess in other packages
 	protected static int numberOfAnimals = 0;
 
+	
+	// Scanner object allows you to accept user input from the keyboard
 	static Scanner userInput = new Scanner(System.in);
 
+	
+	// Any time an Animal object is created this function called the constructor is called to initialize the object
 	public Animal() {
 		numberOfAnimals++;
 
@@ -58,6 +66,8 @@ public class Animal {
 		int modOfNumbers = 5 % 3;
 		System.out.println("5 % 3 = " + modOfNumbers);
 
+		
+		// \n adds a break after the input
 		System.out.print("Enter the name: \n");
 
 		// hasNextInt, hasNextFloat, hasNextDouble, hasNextBoolean, hasNextByte
