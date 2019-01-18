@@ -46,6 +46,9 @@ public class Animal {
 			this.setName(userInput.nextLine());
 			
 		}
+		
+		this.setFavoriteColor();
+		this.setUniqueID();
 	}
 	
 	// Source > Generate Getters and Setters (input vs using the input)
@@ -88,6 +91,16 @@ public class Animal {
 
 	public void setUniqueID(long uniqueID) {
 		this.uniqueID = uniqueID;
+		System.out.println("Unique ID set to: " + this.uniqueID);
+	}
+	
+	public void setUniqueID() {
+		long minNumber = 1;
+		long maxNumber = 1000000;
+		
+		// Math.random to generate a random ID for the object
+		this.uniqueID = minNumber + (long) (Math.random() * ((maxNumber - minNumber) + 1));
+		
 	}
 
 	public char getFavoriteChar() {
