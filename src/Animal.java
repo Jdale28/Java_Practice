@@ -16,7 +16,7 @@ public class Animal {
 	
 	protected static int numberOfAnimals = 0;
 	
-	static Scanner userinput = new Scanner(System.in);
+	static Scanner userInput = new Scanner(System.in);
 
 	public Animal() {
 		numberOfAnimals++;
@@ -33,11 +33,92 @@ public class Animal {
 		int divOfNumbers = 5 / 1;
 		System.out.println("5 / 1 = " + divOfNumbers);
 		
-		int modOfNumbers = 5 % 1;
-		System.out.println("5 % 1 = " + modOfNumbers);
+		int modOfNumbers = 5 % 3;
+		System.out.println("5 % 3 = " + modOfNumbers);
+		
+		System.out.print("Enter the name: \n");
+		
+		// hasNextInt, hasNextFloat, hasNextDouble, hasNextBoolean, hasNextByte
+		// nextInt, nextFloat, nextDouble, nextBoolean, nextByte
+		
+		if(userInput.hasNextLine()) {
+			
+			this.setName(userInput.nextLine());
+			
+		}
 	}
 	
+	// Source > Generate Getters and Setters (input vs using the input)
 	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getWeight() {
+		return weight;
+	}
+
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+
+	public boolean isHasOwner() {
+		return hasOwner;
+	}
+
+	public void setHasOwner(boolean hasOwner) {
+		this.hasOwner = hasOwner;
+	}
+
+	public byte getAge() {
+		return age;
+	}
+
+	public void setAge(byte age) {
+		this.age = age;
+	}
+
+	public long getUniqueID() {
+		return uniqueID;
+	}
+
+	public void setUniqueID(long uniqueID) {
+		this.uniqueID = uniqueID;
+	}
+
+	public char getFavoriteChar() {
+		return favoriteChar;
+	}
+
+	public void setFavoriteChar(char favoriteChar) {
+		this.favoriteChar = favoriteChar;
+	}
+
+	public double getSpeed() {
+		return speed;
+	}
+
+	public void setSpeed(double speed) {
+		this.speed = speed;
+	}
+
+	public float getHeight() {
+		return height;
+	}
+
+	public void setHeight(float height) {
+		this.height = height;
+	}
+
+	public static void main(String[] args) {
+		
+		Animal theAnimal = new Animal();
+		
+	}
 	
 
 }
