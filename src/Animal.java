@@ -7,15 +7,33 @@ import java.util.*;
 // A class defines the attributes (fields) and capabilities (methods) of a real world object
 public class Animal {
 
+	
+	// static means this number is shared by all objects of type animals
+	// final means that this value cannot be changed
 	public static final double FAVNUMBER = 1.6180;
 
+	
+	// Variables can start with a letter, underscore or $
+	// Private fields can only be accessed by other methods in the class
 	private String name;
+	
+	// int can be -2^31 to (2^31)-1
 	private int weight;
 	private boolean hasOwner = false;
+	
+	// byte can hold values between -128 to 127
 	private byte age;
+	
+	// long can hold values from -2^63 to (2^63)-1
 	private long uniqueID;
+	
+	// Chars are unsigned ints that represent UTF-16 codes from 0 to 65,535
 	private char favoriteChar;
+	
+	// REVIEW THIS:
+	// Doubles are 64-bit IEEE 754 floating points with decimal values
 	private double speed;
+	// Floats are 32-bit IEEE 754 floating points with decimal values
 	private float height;
 
 	protected static int numberOfAnimals = 0;
